@@ -4,9 +4,9 @@
     // Note the id, we need to set this correctly on the script tag responsible for
     // requesting this file.
     var me = document.getElementById('my-iframe-content-loader-script-tag');
-
+    var ifrm = document.createElement('iframe');
     function loadIFrame() {
-        var ifrm = document.createElement('iframe');
+        
         ifrm.id = 'my-iframe-identifier';
         ifrm.setAttribute('src', 'https://script.google.com/macros/s/AKfycbyXTiTdplwObJ42w6t_YUr9606midTwp2kNgwAQxOVehpTc7lGq8P4VR7DsQZlI9Tg_Vw/exec');
         ifrm.style.width = '100%';
