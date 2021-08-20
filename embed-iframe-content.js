@@ -2,10 +2,9 @@
 (function(){
     // Note the id, we need to set this correctly on the script tag responsible for
     // requesting this file.
-    var ifrm;
     var me = document.getElementById('my-iframe-content-loader-script-tag');
     function loadIFrame() {
-        ifrm = document.createElement('iframe');
+        var ifrm = document.createElement('iframe');
         ifrm.id = 'my-iframe-identifier';
         ifrm.setAttribute('src', 'https://script.google.com/macros/s/AKfycbyXTiTdplwObJ42w6t_YUr9606midTwp2kNgwAQxOVehpTc7lGq8P4VR7DsQZlI9Tg_Vw/exec');
         ifrm.style.width = '100%';
@@ -29,7 +28,7 @@
         resizerScriptTag.type = 'text/javascript';
 
         // IMPORTANT: insert the script tag before attaching the onload and setting the src.
-        me.insertAdjacentElement('afterend', ifrm);
+        me.insertAdjacentElement('afterend', resizerScriptTag);
 
         // IMPORTANT: attach the onload before setting the src.
         resizerScriptTag.onload = loadIFrame;
