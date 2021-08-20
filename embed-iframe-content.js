@@ -6,7 +6,7 @@
     function loadIFrame() {
         var ifrm = document.createElement('iframe');
         ifrm.id = 'my-iframe-identifier';
-        ifrm.setAttribute('src', 'https://script.google.com/macros/s/AKfycbyXTiTdplwObJ42w6t_YUr9606midTwp2kNgwAQxOVehpTc7lGq8P4VR7DsQZlI9Tg_Vw/exec');
+        ifrm.setAttribute('src', 'https://script.google.com/macros/s/AKfycbw9DXp93bzPlhoyZY6c84fdBZ9lGl22MkZ-cHTz01Pv_RegggB-ydfXU1xmPnrjYlwzzA/exec');
         ifrm.style.width = '100%';
         ifrm.style.border = 0;
         // we initially hide the iframe to avoid seeing the iframe resizing
