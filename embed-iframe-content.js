@@ -1,8 +1,8 @@
 // /js/embed-iframe-content.js
-var ifrm;
 (function(){
     // Note the id, we need to set this correctly on the script tag responsible for
     // requesting this file.
+    var ifrm;
     var me = document.getElementById('my-iframe-content-loader-script-tag');
     function loadIFrame() {
         ifrm = document.createElement('iframe');
